@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Renseignement</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body style="text-align: center;">
+        <main>
+            <h1 style="col">Fiche de renseignement</h1>
+            <form>
+                <fieldset>
+                    <legend>Civilité</legend>
+
+                    <label for="nom">Nom:</label>
+                    <input type="text" name="nom" id="nom" autofocus>
+
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" name="prenom" id="prenom">
+
+                    <label for="date">Date de naissance:</label>
+                    <input type="date" name="date" id="date"><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required placeholder="ex:juste@hotmail.com"><br><br>
+
+                    <label for="password">Mot de passe:</label>
+                    <input type="password" name="email" id="password" required>
+
+                         <p>
+                            Sexe :<br><label for="Homme">Homme</label>
+                            <input id="Homme" type="radio" name="sexe">
+                        </p>
+                        <p>
+                            <label for="Femme">Femme</label>
+                            <input id="Femme" type="radio" name="sexe">
+                        </p>
+                </fieldset>
+                <br>
+                <br>
+                <fieldset>
+                    <legend>Formation</legend>
+
+                    <label for="diplome">Diplome obtenu:</label>
+                    <select name="diplome" id="diplome">
+                        <option value="aucun">Aucun</option>
+                        <option value="bac">BAC</option>
+                        <option value="bac_2">BAC+2</option>
+                        <option value="bac_3" selected>BAC+3</option>
+                        <option value="license">License</option>
+                        <option value="master">Master</option>
+                    </select>
+
+                    <p>
+                        Centre d'intérêt <br>
+                        <input type="checkbox" name="Centre d'intérêt" id="musique">
+                        <label for="musique">Musique</label>
+
+                        <input type="checkbox" name="Centre d'intérêt" id="cinema">
+                        <label for="cinema">Cinema</label>
+
+                        <input type="checkbox" name="Centre d'intérêt" id="sport">
+                        <label for="sport">Sport</label>
+
+                        <input type="checkbox" name="Centre d'intérêt" id="lecture">
+                        <label for="lecture">Lecture</label>
+                    </p>
+                        <form> 
+                            <p>
+                                diplome obtenu:<select id="interet" name="diplome obtenu">
+                                <option value="interet">aucun</option>
+                                <option value="interet">bac</option>
+                                <option value="interet">bac2</option>
+                                <option value="interet"selected="">bac3</option>
+                                <option value="interet">master</option>
+                             </select>
+                         </p>
+                       </form> 
+                </fieldset>
+                <br>
+                <p>
+                    <label for="commentaire">Laissez un commentaire</label> <br>
+                    <textarea name="commentaire" id="commentaire" cols="109" rows="10" ></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="condition" id="condition" required>
+                    <label for="condition">J'accepte <a href="#">conditions d'utilisation</a>.</label>
+                </p>
+
+                <p>
+                    <input type="submit" name="envoyer" required>
+                </p>
+
+            </form>
+        </main>
+
+    </body>
+</html>
