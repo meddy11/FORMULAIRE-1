@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url('https://media.meteojob.com/theme/2.3/images/bg-clouds.png'),linear-gradient(to top,#6CC2EB,#1299D8);
+    height: 100vh;
+    font-family: 'Open Sans',Arial, Helvetica, sans-serif;
+}
+main{
+    width: 45%;
+    margin: auto;
+}
+
+.prenom{
+    display: flex;
+    flex-direction: row;
+}
+#surname {
+    width: 127%;
+    padding: 10px 9px;
+}
+#name{
+    width: 130%;
+    padding: 10px 9px;
+}
+
+.surnom{
+    margin-left: 6vw;
+}
+.class{
+    display: flex;
+    flex-direction: column;
+}
+.class > input{
+    width: 100%;
+    
+    box-sizing: border-box;
+    padding: 10px 9px;
+}
+form{
+    background-color: #FFFFFF;
+    padding: 2em;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    border-radius: 4px;
+}
+label,input{
+    display: block;
+}
+
+header{
+    text-align: center;
+}
+header > h2{
+    color: #FFFFFF;
+    font-size: 1.2em;
+    font-weight: 400px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+h2{
+    font-size: .9em;
+    color: #272525DA;
+}
+
+input[type="submit"]{
+    margin: 6px auto;
+    padding: 10px 25px;
+    color: #FFFFFF;
+    background-color: #0964EE;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    font-size: .9em;
+}
+.btn{
+    color: #919396;
+    overflow: hidden;
+}
+.bt{
+   margin: 10px;
+   padding: 20px 33px;
+
+}
+.bt1{
+    text-align: center;
+    margin: 10px;
+   padding: 20px 30px 9px 20px;
+}
+.span{
+    display: flex;
+}

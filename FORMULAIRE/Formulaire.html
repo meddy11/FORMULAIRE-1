@@ -1,87 +1,116 @@
 <!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Renseignement</title>
-    </head>
-    <body marginwidth="" marginheight="">
-        <main>
-            <h1>Fiche de renseignement</h1>
-            <form>
-                <fieldset>
-                    <legend>Civilité</legend>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<body>
+    
+    <main>
+        <header>
+            <img src="https://media.meteojob.com/theme/2.3/images/logo-white.png?201802221640&f23d2ac508759791af3dee5079074976acb27b71" alt="logo de meteo job">
+            <h2>Creez votre profil Meteojob</h2>
+        </header>
+        <form method="GET">
 
-                    <label for="nom">Nom:</label>
-                    <input type="text" name="nom" id="nom" autofocus>
+           
+            <div class="prenom">
+                <div class="" id="class">
+                    <label for="surname">Prenom</label>
+                    <input type="text" placeholder="Votre prenom" id="surname"/>
+                </div>
+   				<br>
+                <div class="surnom">
+                    <label for="name">Nom</label>
+                    <input type="text" placeholder="Votre nom" id="name" />
+                </div>
+            </div>
+            	<br>
+            
+            <div class="class ">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" placeholder="Votre adresse e-mail" />
+            </div>
 
-                    <label for="prenom">Prénom:</label>
-                    <input type="text" name="prenom" id="prenom">
+            <br>
 
-                    <label for="date">Date de naissance:</label>
-                    <input type="date" name="date" id="date"><br><br>
+            <div class="class">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" placeholder="Tapez votre mot de passe" />
+            </div>
 
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" required placeholder="ex:juste@hotmail.com"><br><br>
+            <br>
 
-                    <label for="password">Mot de passe:</label>
-                    <input type="password" name="email" id="password" required>
+            <div class="class">
+                <label for="job">Postes recherches</label>
+                <input type="text" placeholder="Ex: Chef de projet,cuisinier" id="job" />
+            </div>
 
-                    <p>
-                        Sexe
-                        <input type="radio" name="sexe" id="homme">
-                        <label for="homme">Homme</label>
+            <br>
 
-                        <input type="radio" name="sexe" id="femme">
-                        <label for="femme">Femme</label>
-                    </p>
-                </fieldset>
-                <br>
-                <br>
-                <fieldset>
-                    <legend>Formation</legend>
+            <div class="class">
+                <label for="place">Ou souhaitez-vous travailler ? </label>
+                <input type="text" placeholder="Ex: Essone,Nante,Bretagne..." id="place" />
+            </div>
 
-                    <label for="diplome">Diplome obtenu:</label>
-                    <select name="diplome" id="diplome">
-                        <option value="aucun">Aucun</option>
-                        <option value="bac">BAC</option>
-                        <option value="bac_2">BAC+2</option>
-                        <option value="bac_3" selected>BAC+3</option>
-                        <option value="license">License</option>
-                        <option value="master">Master</option>
-                    </select>
+            <br>
 
-                    <p>
-                        Centre d'intérêt <br>
-                        <input type="checkbox" name="Centre d'intérêt" id="musique">
-                        <label for="musique">Musique</label>
+            <h2>Types de contrats recherches</h2>
 
-                        <input type="checkbox" name="Centre d'intérêt" id="cinema">
-                        <label for="cinema">Cinema</label>
+            <div class="btn">
+            
+                <div class="btn-p">
 
-                        <input type="checkbox" name="Centre d'intérêt" id="sport">
-                        <label for="sport">Sport</label>
+                	<button class="bt"type="button">CDI</button>
 
-                        <input type="checkbox" name="Centre d'intérêt" id="lecture">
-                        <label for="lecture">Lecture</label>
-                    </p>
-                </fieldset>
-                <br>
-                <p>
-                    <label for="commentaire">Laissez un commentaire</label> <br>
-                    <textarea name="commentaire" id="commentaire" cols="109" rows="10" ></textarea>
-                </p>
+					<button class="bt"type="button">CDD</button>
 
-                <p>
-                    <input type="checkbox" name="condition" id="condition" required>
-                    <label for="condition">J'accepte <a href="#">conditions d'utilisation</a>.</label>
-                </p>
+					<button class="bt1"type="button">Indépendant/<br>Franchisé</button>
 
-                <p>
-                    <input type="submit" name="envoyer" required>
-                </p>
+				    <button class="bt"type="button">Intérim</button>
 
-            </form>
-        </main>
+                </div><br>
 
-    </body>
+             <div class="btn-b">
+
+             	<button class="bt"type="checkbox">Stage</button>
+
+				<button class="bt1"type="checkbox">Alternance/<br>Apprentissage</button>
+
+				<span>+ de type de contrat</span>
+             </div>
+				   
+                
+            </div>
+
+          
+
+            <div class="span">
+
+                <span>
+                    j'accepte les <a href="#">conditions generales</a> pour creer mon compte,beneficier des services de matching et de postuler aux offres : 
+                </span>
+                
+                    <span class="">
+                        <input type="checkbox" name="valide" id="term" value="yes"/>
+    
+                        <label for="term" class="accepted">
+                            OUI
+                        </label>
+    
+                        <label for="term" class="refused">
+                            NON
+                        </label>
+                    </span>
+                </div>
+
+            </div>
+
+
+            <input type="submit" value="Continuer"/>
+
+        </form>
+    </main>
+</body>
 </html>
