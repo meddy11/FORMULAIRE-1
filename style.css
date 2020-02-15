@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@ body{
     height: 100vh;
     font-family: 'Open Sans',Arial, sans-serif;
     font-size: 1em;
-    color: #383636d1;
+    color: #42456b;
     font-weight: bold;
 
 }
@@ -30,6 +31,9 @@ label,input{
     display: block;
 
 }
+a{
+  color: #42456b;   
+}
 
 header{
     text-align: center;
@@ -39,6 +43,7 @@ header > h2{
     color: #FFFFFF;
     font-size: 1.2em;
     font-weight: 400px;
+    font-family: 'Poiret One', cursive;
 }
 
 input[type="checkbox"]{
@@ -48,7 +53,7 @@ input[type="checkbox"]{
 
 h2{
     font-size: .9em;
-    color: #272525DA;
+    color: #42456b;
 }
 
 input[type="submit"]{
@@ -59,14 +64,14 @@ input[type="submit"]{
     background-color: #3498db;
     outline: none;
     border: none;
-    border-radius: 3px;
+    
     font-size: 1.2em;
 }
 .prenom input{
     
-    width: 100%;
-    height: 100%;
-  /* padding-left: 3%;*/
+    width: 95%;
+    height: 80%;
+    padding-left: 3%;
 }
 
 .prenom{
@@ -74,7 +79,7 @@ input[type="submit"]{
     display: flex;
     flex-direction: row;
     justify-content: space-between;  
-    margin-bottom: 55px;   
+    margin-bottom: 30px;   
 
 
 }
@@ -96,15 +101,19 @@ input[type="submit"]{
    display: flex;
     flex-direction: column;
    box-sizing: border-box;
-   margin-top: 40px;
+   margin-top: 20px;
 }
 
 .class > input{
     margin-top: 10px;
     width: 100%;
     box-sizing: border-box;
-    padding: 15px 9px;
+    padding: 10px 9px;
 
+}
+label{
+    font-family: 'Open Sans', sans-serif;
+     color: #42456b;
 }
 
 .btn{
@@ -118,7 +127,7 @@ input[type="submit"]{
    margin: 10px;
    padding: 22px 62px;
    border: none;
-   color:#000000b5;
+   color:#16354e;
 
 }
 .bt1{
@@ -131,7 +140,7 @@ input[type="submit"]{
 
 .oeil{
     width: 630px;
-    height: 8vh;
+    height: 7vh;
     border: 1px solid #aaa;
     box-sizing: border-box;
     padding-left: 10px;
@@ -141,18 +150,19 @@ input[type="submit"]{
     justify-content: space-between;
     margin-bottom: auto;
     box-sizing: border-box;
+    
 }
 #password {
     border: none;
    /* font-size: 1em;*/
-    outline: none;
+   outline-color: #248BCE;
     width: 23vw;
 }
 #img {
     height: 20px;
     width: 20px;
     padding-right: 10px;
-    padding: 5px;
+    padding: 11px;
 }
 
 
@@ -167,13 +177,12 @@ input[type="submit"]{
 
 }
 .checkbox-btn{
-
-   top: 50%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 100px;
+    width: 102px;
     height: 40px;
-     margin: 38px -37px 10px 10px;
+    margin: 38px -14px 16px 10px
    
 }
 
@@ -188,31 +197,31 @@ input[type="submit"]{
     opacity: 0;
     z-index: 1;
     margin: 5px;
-    padding: px;
+    
     
 }
 .checkbox-btn div{
     position: absolute;
     top: 0;
     left: 0;
-    width: 95%;
-    height: 101%;
+    width: 130%;
+    height: 85%;
     display: block;
     border: 4px solid #e4d5d5;
-    border-radius: 4px;
+    border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0,0,0,0,0.5); 
     
     overflow: hidden;
 
 }
 .checkbox-btn div .slide{
-       position: absolute;
-       top: 0;
-       left: 0;
-       width: 40px;
-       height: 40px;
-       background: #e4d5d5;
-       transition: 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 85px;
+    background: #e4d5d5;
+    transition: 0.5s;
 }
 .checkbox-btn input:checked + div .slide{
     transform: translateX(40px);
@@ -221,11 +230,11 @@ input[type="submit"]{
     content: 'OUI';
     position: absolute;
     top: 0;
-    left: -39px;
+    left: -38px;
     text-align: center;
-    width: 40px;
+    width: 37px;
     height: 40px;
-    line-height: 43px;
+    line-height: 38px;
     background: #adadad;
     font-weight: bold;
     color: #fff;
@@ -235,7 +244,7 @@ input[type="submit"]{
     content: 'NON';
     position: absolute;
     top: 0;
-    right: -20px;
+    right: 14px;
     text-align: center;
     width: 40px;
     height: 45px;
