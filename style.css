@@ -17,14 +17,16 @@ main{
 }
 
 form{
+
     background-color: #FFFFFF;
     padding: 2em;
     box-sizing: border-box;
-    margin-bottom: 1.2em;
+    margin-bottom: 2em;
     border-radius: 4px;
 
 }
 label,input{
+
     display: block;
 
 }
@@ -41,6 +43,7 @@ header > h2{
 
 input[type="checkbox"]{
     display: none;
+
 }
 
 h2{
@@ -49,7 +52,8 @@ h2{
 }
 
 input[type="submit"]{
-    margin: 6px auto;
+
+    margin: 45px auto;
     padding: 15px 25px;
     color: #FFFFFF;
     background-color: #3498db;
@@ -59,8 +63,9 @@ input[type="submit"]{
     font-size: 1.2em;
 }
 .prenom input{
+    
     width: 100%;
-    height: 70%;
+    height: 100%;
   /* padding-left: 3%;*/
 }
 
@@ -68,7 +73,8 @@ input[type="submit"]{
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;     
+    justify-content: space-between;  
+    margin-bottom: 55px;   
 
 
 }
@@ -90,12 +96,14 @@ input[type="submit"]{
    display: flex;
     flex-direction: column;
    box-sizing: border-box;
+   margin-top: 40px;
 }
 
 .class > input{
+    margin-top: 10px;
     width: 100%;
     box-sizing: border-box;
-    padding: 8px 9px;
+    padding: 15px 9px;
 
 }
 
@@ -108,7 +116,7 @@ input[type="submit"]{
 
 .bt{
    margin: 10px;
-   padding: 16px 45px;
+   padding: 22px 62px;
    border: none;
    color:#000000b5;
 
@@ -116,119 +124,14 @@ input[type="submit"]{
 .bt1{
     
     margin: auto;
-   padding: 15px 10px 2px 10px;
+   padding: 21px 9px 8px 10px;
    border: none;
    color:#000000b5;
 }
-.span{
 
-    color: #000000b5;
-
-}
-   /*---button-----*/ 
-
-input[type="submit"]{
-  cursor: pointer;
-  font-size: 20px;
-}
-
-.col div label input:checked{
-  background: red;
-}
-
-.bouttonbox input[type="checkbox"]{
-  width: 100px;
-  height: 40;
-  background: red;
-  -webkit-appearance: none;
-
-}
-
-
-
-.checkbox-btn{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-  height: 30px;
-  margin-top: 30%;
-  margin-left: 15%;
-  
-  
-}
-.checkbox-btn input{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 1;
-}
-.checkbox-btn div{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  
-  border-radius: 5px;
-  
-  overflow: hidden;
-  
-}
-
-.checkbox-btn div .slide{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 50px;
-  background: rgb(238, 238, 238);
-  transition: 0.2s;
-}
-.checkbox-btn input:checked + div .slide{
-  transform: translateX(60px);
-}
-
-.checkbox-btn .slide:before{
-  content: 'OUI';
-  position: absolute;
-  top: 0;
-  left: -60px;
-  text-align: center;
-  width: 60px;
-  height: 100%;
-  background: rgb(101, 177, 240);
-  font-weight: 800;
-  color: rgb(255, 255, 255);
-  line-height: 30px;
-}
-.checkbox-btn .slide:after{
-  content: 'NON';
-  position: absolute;
-  top: 0;
-  right: -60px;
-  text-align: center;
-  width: 70px;
-  height: 100%;
-  background: #bbb8b8;
-  font-weight: 800;
-  color: rgb(255, 255, 255);
-  line-height: 30px;
-}
-/*i{
-  position: absolute;
-  margin-top: 35px;
-  margin-left: 410px;
-}*/
 .oeil{
     width: 630px;
-    height: 5vh;
+    height: 8vh;
     border: 1px solid #aaa;
     box-sizing: border-box;
     padding-left: 10px;
@@ -236,7 +139,7 @@ input[type="submit"]{
     font-size: 1em;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 4vh;
+    margin-bottom: auto;
     box-sizing: border-box;
 }
 #password {
@@ -251,6 +154,110 @@ input[type="submit"]{
     padding-right: 10px;
     padding: 5px;
 }
+
+
+
+/*------bouton--------*/
+
+
+.bloc3{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.checkbox-btn{
+
+   top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 40px;
+     margin: 38px -37px 10px 10px;
+   
+}
+
+.checkbox-btn input{
+     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: block;
+    opacity: 0;
+    z-index: 1;
+    margin: 5px;
+    padding: px;
+    
+}
+.checkbox-btn div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 101%;
+    display: block;
+    border: 4px solid #e4d5d5;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0,0.5); 
+    
+    overflow: hidden;
+
+}
+.checkbox-btn div .slide{
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 40px;
+       height: 40px;
+       background: #e4d5d5;
+       transition: 0.5s;
+}
+.checkbox-btn input:checked + div .slide{
+    transform: translateX(40px);
+}
+.checkbox-btn .slide:before{
+    content: 'OUI';
+    position: absolute;
+    top: 0;
+    left: -39px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 43px;
+    background: #adadad;
+    font-weight: bold;
+    color: #fff;
+
+}
+.checkbox-btn .slide:after{
+    content: 'NON';
+    position: absolute;
+    top: 0;
+    right: -20px;
+    text-align: center;
+    width: 40px;
+    height: 45px;
+    line-height: 40px;
+    background: #adadad;
+    font-weight: bold;
+    color: #fff;
+
+}
+/*.bloc3{
+
+  /*  top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    width: 100px;
+    height: 40px;
+    background: #ccc;
+        }*/
+ 
+
+
+
 
 
 
